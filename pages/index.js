@@ -1,4 +1,4 @@
-// 2nd run at getting  a mvp up
+
 
 function ComingSoonPage() {
   return (
