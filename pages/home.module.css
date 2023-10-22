@@ -1,7 +1,21 @@
+@keyframes gradientShift {
+    0% {
+        background-position: 100% 0%;
+    }
+    50% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
 .background {
     display: flex;
     height: 100vh;
-    background: linear-gradient(90deg, green 33.33%, black 33.33%, black 66.67%, red 66.67%);
+    background: linear-gradient(45deg, #3498db, #9b59b6, #e74c3c, #34495e);
+    background-size: 300% 300%;
+    animation: gradientShift 15s infinite;
     justify-content: center;
     align-items: center;
 }
@@ -11,4 +25,13 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
 }
