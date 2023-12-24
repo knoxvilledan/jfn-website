@@ -12,6 +12,7 @@
 
 .background {
   display: flex;
+  flex-direction: column;
   height: 100vh;
   background: linear-gradient(45deg, #3498db, #9b59b6, #e74c3c, #34495e);
   background-size: 300% 300%;

@@ -4,7 +4,7 @@ import HeroSection from "../components/HeroSection"; // Add this line
 
 const Home = () => {
   return (
-    <div className={styles.background}>
+    <div className={`${styles.background} flex flex-col`}>
       <HeroSection /> {/* Add this line */}
       <div className={styles.container}>
         <h1 className="text-4xl font-bold animate-pulse">Under Construction</h1>
