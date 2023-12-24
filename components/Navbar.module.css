@@ -1,0 +1,48 @@
+.Navbar {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  position: relative;
+}
+
+.Navbar:hover {
+  background-color: #333;
+}
+
+.Navbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom right, #ff0000, #00ff00);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.Navbar::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-image: linear-gradient(to bottom right, #ffff00, #ff00ff);
+  animation: lightning 1s infinite;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+@keyframes lightning {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
