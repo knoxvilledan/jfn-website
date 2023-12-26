@@ -1,12 +1,13 @@
 .Navbar {
-  background-color: #000;
+  background-color: #fff;
   color: #fff;
-  padding: 20px;
+  padding: 2000px;
   position: relative;
+  margin: 2000px;
 }
 
 .Navbar:hover {
-  background-color: #333;
+  background-color: #fff;
 }
 
 .Navbar::before {
@@ -30,7 +31,7 @@
   width: 100px;
   height: 100px;
   background-image: linear-gradient(to bottom right, #ffff00, #ff00ff);
-  animation: lightning 1s infinite;
+  animation: lightning 3s infinite;
   opacity: 0.5;
   z-index: -1;
 }
