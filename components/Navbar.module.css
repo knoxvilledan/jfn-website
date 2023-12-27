@@ -1,9 +1,9 @@
 .Navbar {
-  background-color: #fff;
+  background-color: #000;
   color: #fff;
-  padding: 2000px;
+  padding: 20px;
   position: relative;
-  margin: 2000px;
+  margin: 20px;
 }
 
 .Navbar:hover {
